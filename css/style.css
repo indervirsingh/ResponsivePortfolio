@@ -1,5 +1,5 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
 
 /* index.html */
@@ -7,6 +7,7 @@
     background-color: #222;
     color: white;
     font-family: 'JetBrains Mono', monospace;
+    font-size: 16pt;
     line-height: 1.5;
 }
 nav {
