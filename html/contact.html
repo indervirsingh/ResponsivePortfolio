@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indervir's Projects</title>
+    <title>Contact Indervir</title>
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../css/style.css">
     
     <!-- Links for Google font: 'JetBrains Mono' -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body class="portfolioBody">
-     <!-- Navbar -->
-     <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar">
+<body class="contactBody">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar">
 
         <div class="container">
             <!-- Brand -->
@@ -40,7 +40,7 @@
 
                     <!-- Home -->
                     <li class="nav-item active">
-                        <a class="nav-link" href="./index.html">Home<span class="sr-only"></span>
+                        <a class="nav-link" href="../index.html">Home<span class="sr-only"></span>
                         </a>
                     </li>
 
@@ -85,35 +85,40 @@
     </nav>
     <!-- End of Navbar -->
 
+    <br>
+
+    <!-- Contact Form -->
     <main>
-        <!-- Projects header/intro -->
-        <header class="projectBackground projectStart">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 projectText">
-                        <h1>Indervir's Projects</h1>
-                        <p>This page contains all of my projects.</p>
+        <div class="container">
+            <form action="mailto:iindervirsingh@gmail.com" method="POST" enctype="multipart/form-data" id="contact-me">
+                <div class="forms pad">
+                    <!-- Name -->
+                    <div class="row">
+                        <div class="form-floating pad">
+                            <input type="text" class="form-control-lg form-control"  id="floatingInput" placeholder="Name">
+                            <label for="floatingInput">Name</label>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </header>
-
-        <section>
-            <!-- Projects -->
-            <div class="container" style="position: relative; top: 55%; left: 1%">
-                <div class="row projects">
-                    <div class="col-sm col-md col-lg">
-                        <a href="https://github.com/indervirsingh/HoriseonRefactor" target="_blank"><img class="projectPhotos" src="./Assets/horiseonScreenshot.png" alt="horiseon-screenshot"></a>
-                        <p>This is the Horiseon homework assignment.</p>
+                    <!-- Email Address -->
+                    <div class="row">
+                        <div class="form-floating pad">
+                            <input type="email" class="form-control-lg form-control" id="floatingInput" placeholder="youremail@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
                     </div>
+                    <!-- Message -->
+                    <div class="form-floating">
+                        <textarea class="form-control-lg form-control" id="floatingTextArea" placeholder="Message"  style="height: 35%;"></textarea>
+                        <label for="floatingTextArea">Message</label>
+                    </div>
+                    <!-- Send Button -->
+                    <button class="btn btn-primary" type="submit" style="border: none; margin-top: 5px; background-color: #55acee" form="contactme" value="Submit">
+                        <i class="far fa-envelope"></i> Send
+                    </button>
                 </div>
+            </form>
 
-                <div class="row projects">
-                    <a href="" target="_blank" alt="prework-about-me-screenshot"><img class="projectPhotos" src="./Assets/preworkScreenshot.png" alt=""></a>
-                    <p>This is a pre-work assignment that I completed before UC Davis Coding Bootcamp.</p>
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -121,6 +126,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/347692fd4f.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.js"></script>
-
+        
 </body>
 </html>

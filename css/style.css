@@ -28,7 +28,7 @@ nav {
 
 /* contact.html */
 .contactBody {
-    background-image: url(./Assets/contact-background.jpg);
+    background-image: url(../Assets/contact-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #222;
@@ -60,7 +60,7 @@ nav {
     top: 15%;
 }
 .portfolioBody {
-    background-image: url(./Assets/backgroundimage.png);
+    background-image: url(../Assets/backgroundimage.png);
     background-repeat: repeat;
     background-size: 100% auto;
     background-color: #444;
